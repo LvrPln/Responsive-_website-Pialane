@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pink Hub</title>
+</head>
+
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Font', sans-serif;
+        list-style: none;
+        cursor: context-menu;
+    }
+    
+    h2 {
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin: 0 0 20px;
+    }
+
+    p {
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin: 0 0 20px;
+        text-align: justify;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Header Section */
+    .header .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header .container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    /*  Header Section */
+
+    /* Navbar Section */
+    .navbar .container {
+        background-color: #ECBDC4;
+        display: flex;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .navbar .container .nav {
+        margin-left: 50px;
+        padding: 0;
+    }
+
+    .navbar .container .nav:hover,
+    .navbar .container .nav a:hover {
+        color: #FFFFFF;
+        border-bottom: #FFFFFF solid 1px;
+    }
+    /*  Navbar Section */
+
+    /* Hero Section */
+    .hero .container {
+        display: flex;
+    }
+
+    .hero .container .box:first-child {
+        background-color: #F5DCE0;
+        padding: 30px 50px;
+        width: 30%;
+        height: auto;
+    }
+
+    .hero .container .box:first-child img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover;
+    }
+
+    .hero .container .box:last-child {
+        background-color: #F5DCE075;
+        padding: 30px 50px;
+        width: 70%;
+        height: auto;
+    }
+
+    .hero .container .box:last-child img {
+        width: 100%; 
+        height: auto;
+        object-fit: cover;
+    }
+    /*  Hero Section */
+
+    /* CSS sa mga Screen */
+    @media  screen and (max-width: 768px) {
+        .hero .container .box:first-child {
+            width: 50%;
+            height: auto;
+        }
+
+        .hero .container .box:first-child img {
+            width: 100%; 
+            height: auto;
+        }
+
+        .hero .container .box:last-child {
+            width: 50%;
+            height: auto;
+        }
+
+        .hero .container .box:last-child img {
+            width: 100%; 
+            height: auto;
+        }
+    }
+
+    @media  screen and (max-width: 425px) {
+        .navbar .container .nav {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .hero .container {
+            display: block;
+        }
+
+        .hero .container .box:first-child {
+            width: auto;
+            height: auto;
+            padding: 30px 20px;
+        }
+
+        .hero .container .box:first-child img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .hero .container .box:last-child {
+            width: auto;
+            height: auto;
+            padding: 30px 20px;
+        }
+
+        .hero .container .box:last-child img {
+            width: 100%; 
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+    /*  Screen */
+</style>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <img src="header.png" alt="THE PINK HUB">
+        </div>
+    </section>
+
+    <nav class="navbar">
+        <div class="container">
+            <li class="nav">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav">
+                <a href="#">About</a>
+            </li>
+            <li class="nav">
+                <a href="#">Genre</a>
+            </li>
+            <li class="nav">
+                <a href="#">Updates</a>
+            </li>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="box">
+                <h2>About</h2>
+                <p>Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda Ganda</p>
+                <p>Photo of the Website Creator:</p>
+                <img src="elvira.png" alt="ELVIRA 'nang lalamang' PAILANE">
+            </div>
+            <div class="box">
+                <h2>Kimi no nawa</h2>
+                <P>A Japanese anime film about two high schoolers, a girl from a rural town and a boy from Tokyo, who mysteriously begin swapping bodies, leading them to develop a deep connection despite not knowing each other in person, all while trying to unravel the mystery behind their strange phenomenon.</P>
+                <img src="kimi no nawa.png" alt="Kimi ni dore dake chikazuite mo">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
